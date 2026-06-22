@@ -11,10 +11,13 @@ public class calculaDesconto {
 
         double desconto = 0;
 
-        if (valor > 200) {
+        if (valor >= 200) {
             desconto = valor * 0.20;
-        } else if (valor > 100) {
+        } else if (valor >= 100) {
             desconto = valor * 0.10;
+        }
+        else{
+            System.out.println("Não tem desconto disponível");
         }
 
         double valorFinal = valor - desconto;
